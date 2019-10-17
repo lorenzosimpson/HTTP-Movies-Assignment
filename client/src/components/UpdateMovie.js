@@ -11,6 +11,14 @@ const initialMovie = {
 const UpdateMovie = props => {
     const [movie, setMovie] = useState(initialMovie)
 
+    useEffect(() => {
+        const movieToEdit = props.movies.find(movie => `${movie.id}` === props.match.params.id)
+
+        if (movieToEdit) setMovie(movieToEdit)
+
+    }, [])
+
+    
 
     return (
         <form>
