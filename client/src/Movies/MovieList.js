@@ -5,7 +5,7 @@ import MovieCard from "./MovieCard";
 
 
 const MovieList = props => {
-
+  console.log(props.movies, 'movielist props')
     return (
       <div className="movie-list">
         {props.movies.map(movie => (
