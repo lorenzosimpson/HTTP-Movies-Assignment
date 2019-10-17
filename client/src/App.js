@@ -20,7 +20,7 @@ const App = () => {
   const addToSavedList = movie => {
     setSavedList([...savedList, movie]);
   };
-
+  console.log(movies)
 
   return (
     <>
@@ -37,7 +37,7 @@ const App = () => {
       <Route 
         path='/update-movie/:id'
         render={props => {
-          return <UpdateMovie {...props} movies={movies} setMovies={setMovies} />
+          return <UpdateMovie {...props}  movies={movies} setMovies={setMovies} />
         }}
         />
     </>
