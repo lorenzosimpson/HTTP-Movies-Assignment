@@ -50,7 +50,7 @@ console.log(movie)
         <form onSubmit={submitForm}>
             <input type='text' name='title' value={movie.title} onChange={handleChanges}></input>
             <input type='text' name='director' value={movie.director} onChange={handleChanges}></input>
-            <input type='number' name='metascore' value={movie.metascore} onChange={handleChanges}></input>
+            <input id='form-number' type='number' name='metascore' value={movie.metascore} onChange={handleChanges}></input>
             <input type='text' name='stars' value={movie.stars.join()} onChange={handleChanges}></input>
             
             <button>Update Movie</button>

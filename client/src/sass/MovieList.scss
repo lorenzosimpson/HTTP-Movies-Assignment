@@ -1,0 +1,14 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+}
+
+.movie-card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid lightgray;
+    margin: 2%;
+}
